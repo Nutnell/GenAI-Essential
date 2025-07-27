@@ -1,18 +1,18 @@
-#Environment Setup
+# Environment Setup
 
-##Create an environment
+## Create an environment
 
 ```bash
 conda create --name project1 python=3.13.5 -y
 ```
 
-##Activate the environment
+## Activate the environment
 
 ```bash
 conda activate project1
 ```
 
-##Install the requirements
+## Install the requirements
 
 ```bash
 conda install -c conda-forge pandas
@@ -22,20 +22,20 @@ conda install -c conda-forge pandas
 pip install -r requirements.txt
 ```
 
-##jupyter notebook necessities
+## jupyter notebook necessities
 
 If you get a missing module error trying to run jupyter, try 
 ```bash
 conda install -c conda-forge ipykernel
 ```
 
-##Install jupyterlab
+## Install jupyterlab
 
 ```bash
 conda install -c conda-forge jupyterlab
 ```
 
-##Install jupyterlab extensions
+## Install jupyterlab extensions
 
 ```bash
 conda install -c conda-forge jupyterlab-git
@@ -45,12 +45,28 @@ conda install -c conda-forge jupyterlab-git
 conda install -c conda-forge catppuccin-jupyterlab
 ```
 
-##Run jupyterlab
+## Run jupyterlab
 
 ```bash
 jupyter lab --no-browser --allow-root --ip 0.0.0.0
 ```
 
+## For working with AWS Bedrock
+
 ```bash
 pip install boto3
+```
+
+## Requirements for Hugging Face
+
+```bash
+conda install -c conda-forge sentencepiece
+```
+
+```bash
+pip install sacremoses
+```
+
+```bash
+pip install hf_xet
 ```
