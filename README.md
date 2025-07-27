@@ -50,3 +50,7 @@ conda install -c conda-forge catppuccin-jupyterlab
 ```bash
 jupyter lab --no-browser --allow-root --ip 0.0.0.0
 ```
+
+```bash
+pip install boto3
+```
