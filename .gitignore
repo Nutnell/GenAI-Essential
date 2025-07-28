@@ -1,3 +1,6 @@
 .env
 env.txt
-
+quick-qa-model
+quick-qa-model1
+"quick-qa-model/model.safetensors" 
+"quick-qa-model/model1.safetensors" 
