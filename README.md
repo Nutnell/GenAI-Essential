@@ -70,3 +70,27 @@ pip install sacremoses
 ```bash
 pip install hf_xet
 ```
+
+## Llamafile
+After downloading the file, add .exe to the end before working with it on windows.
+
+## Llama.cpp
+
+```bash
+pip install llama-cpp-python
+```
+
+```bash
+winget install llama.cpp
+```
+
+Download a model via:
+https://huggingface.co/lmstudio-community/Llama-3.2-1B-Instruct-GGUF/tree/main
+
+Then run in terminal:
+
+```bash
+llama-cli --hf-repo lmstudio-community/Llama-3.2-1B-Instruct-GGUF \
+--hf-file Llama-3.2-1B-Instruct-Q3_K_L.gguf \
+-p "You are a helpful assistant" -cnv
+```
