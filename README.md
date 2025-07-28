@@ -127,3 +127,89 @@ set CGO_ENABLED=1
 ```bash
 go run main.go
 ```
+
+## For Amazon-q-developer 
+
+ Install Amazon Q extension and follow the prompt to browser to create or logging into a builder's account.
+
+Use WSL for the rest of the steps as follows:
+
+### Go Project Setup (WSL with build-essential)
+
+This project is a Linktree-style clone built in Go, using Gorilla Mux for routing and SQLite for persistence. Since the go-sqlite3 driver requires native compilation via CGo, we’ve shifted the development environment from Windows to WSL (Ubuntu) for smoother C compiler support.
+
+#### System Requirements
+WSL (Windows Subsystem for Linux)
+
+Ubuntu/Debian inside WSL
+
+Go (via sudo apt install golang-go)
+
+#### Build tools:
+
+```bash
+sudo apt update
+```
+
+```bash
+sudo apt install build-essential
+```
+
+
+#### Running the Project
+
+Navigate to your project folder:
+
+```bash
+cd /mnt/c/Users/nutne/codes/GenAI-Essential/Amazon-q-developer/linktree-clone
+```
+
+Set CGO flag for native compilation:
+
+```bash
+export CGO_ENABLED=1
+```
+
+Run the Go server:
+
+```bash
+go run main.go
+```
+
+Hit the endpoint:
+![alt text](<localhost_8000_profile - Google Chrome 28_07_2025 21_54_05.png>)
+
+```bash
+curl http://localhost:8000/profile
+```
+
+#### SQLite Schema Setup (one-time)
+
+If your database isn’t initialized yet:
+
+1. Open SQLite CLI from WSL:
+
+```bash
+sqlite3 profile.db
+```
+
+2. Create the Missing Table
+```sql
+CREATE TABLE profiles (name TEXT, bio TEXT, picture TEXT);
+```
+
+```sql
+CREATE TABLE links (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, url TEXT);
+```
+
+3. Insert some starter data:
+```sql
+INSERT INTO profiles (name, bio, picture) VALUES ('Nutnell', 'Go dev and AI wrangler', 'profile.jpg');
+``` 
+
+4. Exit SQLite:
+
+```sql
+.quit
+```
+Add the extension SQlite Viewer to acess profile.db
