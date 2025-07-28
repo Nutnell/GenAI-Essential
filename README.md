@@ -94,3 +94,36 @@ llama-cli --hf-repo lmstudio-community/Llama-3.2-1B-Instruct-GGUF \
 --hf-file Llama-3.2-1B-Instruct-Q3_K_L.gguf \
 -p "You are a helpful assistant" -cnv
 ```
+
+## Running linktree-clone
+
+```bash
+go mod init genai-essential
+```
+
+```bash
+cd github-copilot\linktree-clone
+```
+
+```bash
+go mod download github.com/gin-gonic/gin
+go mod download github.com/joho/godotenv
+go mod download gorm.io/driver/sqlite
+go mod download gorm.io/gorm
+```
+
+```bash
+go mod tidy
+```
+
+```bash
+go build -o linktree-clone
+```
+
+```bash
+set CGO_ENABLED=1
+```
+
+```bash
+go run main.go
+```
