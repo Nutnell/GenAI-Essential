@@ -235,3 +235,27 @@ Run your python code to get a chat interface. Below are examples when you run:
  ```
 
 ![alt text](<Gradio - Google Chrome 29_07_2025 11_45_29.png>)
+
+## Streamlit
+
+### Install requirements
+
+```bash
+pip install streamlit
+```
+
+### Run 
+
+```bash
+streamlit run chat.py
+```
+
+The image generated is shown in the allocated section:
+
+![alt text](<Streamlit - Google Chrome 29_07_2025 12_27_19.png>)
+
+```bash
+streamlit run hello.py
+```
+
+![alt text](<Streamlit - Google Chrome 29_07_2025 12_23_20.png>)
