@@ -213,3 +213,25 @@ INSERT INTO profiles (name, bio, picture) VALUES ('Nutnell', 'Go dev and AI wran
 .quit
 ```
 Add the extension SQlite Viewer to acess profile.db
+
+## Cody 
+Great for generating interfaces
+
+## Gradio
+
+```bash
+pip install gradio
+```
+
+Run your python code to get a chat interface. Below are examples when you run:
+ ```bash
+ python chat.py
+ ```
+
+ ![alt text](<OpenAI Chatbot - Google Chrome 29_07_2025 10_28_04.png>)
+
+ ```bash
+ python Chat_with_image.py
+ ```
+
+![alt text](<Gradio - Google Chrome 29_07_2025 11_45_29.png>)

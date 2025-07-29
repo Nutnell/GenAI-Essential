@@ -1,0 +1,2 @@
+inp1,inp2,output,timestamp
+.gradio\flagged\inp1\e09be75e4e166b4deba5\download.jpg,,"{""label"": ""dog"", ""confidences"": [{""label"": ""dog"", ""confidence"": 1.7}, {""label"": ""cat"", ""confidence"": 0.3}]}",2025-07-29 10:06:09.290167
