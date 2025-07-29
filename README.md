@@ -259,3 +259,19 @@ streamlit run hello.py
 ```
 
 ![alt text](<Streamlit - Google Chrome 29_07_2025 12_23_20.png>)
+
+## FastHTML
+
+### Install dependencies
+
+```bash
+pip install python-fasthtml
+```
+
+### Example
+
+```bash
+python chatgpt.py
+```
+
+![alt text](<AI Chat & Image Generator - Google Chrome 29_07_2025 14_59_40.png>)
