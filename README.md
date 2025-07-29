@@ -275,3 +275,29 @@ python chatgpt.py
 ```
 
 ![alt text](<AI Chat & Image Generator - Google Chrome 29_07_2025 14_59_40.png>)
+
+## Groq
+
+### Install requirements.
+
+```bash
+pip install groq
+```
+
+```bash
+pip install instruct
+```
+
+### Example outputs
+
+```bash
+python gemma.py.py
+```
+
+![alt text](image.png)
+
+```bash
+python structure.py
+```
+
+![alt text](image-1.png)
