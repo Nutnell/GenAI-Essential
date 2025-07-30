@@ -319,3 +319,24 @@ Install dependencies.
 ```bash
 npm install -g wrangler
 ```
+
+## Implementation of a vector store using PostgreSQL
+
+### Running PostgreSQL via Docker containers.
+
+#### Requirements
+
+Docker desktop.
+Dockerfile.
+docker-compose.yml.
+init.sql.
+
+#### Running
+
+```bash
+docker compose up -d
+```
+
+After a successful build, Add a database connection using the PostgreSQL extension.
+
+You can then run the rest of your code and make sure that the database correctly matches the one you just created.
