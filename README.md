@@ -301,3 +301,21 @@ python structure.py
 ```
 
 ![alt text](image-1.png)
+
+## ai-worker for cloudflare
+
+Navigate to the right directory
+
+```bash
+cd cloudflare
+```
+
+```bash
+cd ai-workers
+```
+
+Install dependencies.
+
+```bash
+npm install -g wrangler
+```

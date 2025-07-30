@@ -1,0 +1,9 @@
+name = "shrill-shape-e722"
+main = "index.js"
+compatibility_date = "2025-07-30"
+
+[ai]
+binding = "AI"
+
+[unsafe.metadata.observability]
+enabled = true
